@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1e3a5f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Die Meisterreinigung Wietmarschen | Wäscherei, Pferdedecken, Textilreinigung</title>
+    <meta name="description" content="Professionelle Textilreinigung in Wietmarschen ★★★★☆ 4,4 | Pferdedeckenservice | Hotelwäsche | Heißmangel | GLS Paketshop | ☎ 01573 8757595">
+    <!-- San Francisco: -apple-system auf Apple-Geräten, sonst System-UI-Fallback -->
+    <style>
+        :root {
+            --primary-blue: #1e3a5f;
+            --accent-teal: #2d9cca;
+            --accent-gold: #d4af37;
+            --text-dark: #2c3e50;
+            --text-light: #666;
+            --bg-cream: #faf8f5;
+            --white: #ffffff;
+            --success-green: #4caf50;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+            --shadow-lg: 0 8px 40px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background: var(--white);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 0.6s ease-out;
+            padding-top: env(safe-area-inset-top);
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0.75rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-image {
+            height: 56px;
+            width: auto;
+            max-height: 70px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .phone-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s ease, transform 0.2s ease;
+            min-height: 44px;
+            min-width: 44px;
+            padding: 0.5rem 1rem;
+            -webkit-tap-highlight-color: rgba(30, 58, 95, 0.15);
+        }
+
+        .phone-link:hover {
+            color: var(--accent-teal);
+        }
+
+        .phone-link:active {
+            color: var(--accent-teal);
+        }
+
+        @media (min-width: 769px) {
+            .phone-link:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .status-open {
+            background: #e8f5e9;
+            color: var(--success-green);
+        }
+
+        .status-closed {
+            background: #ffebee;
+            color: #d32f2f;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.9); }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5f8d 100%);
+            color: var(--white);
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><path d="M0 50 Q 25 25, 50 50 T 100 50" stroke="rgba(255,255,255,0.05)" fill="none" stroke-width="2"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 0.9rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stars {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            min-height: 48px;
+            min-width: 48px;
+            width: 100%;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+        }
+
+        .btn-primary:hover {
+            background: #e5c047;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.25);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--bg-cream);
+            padding: 2rem 1rem;
+            border-top: 3px solid var(--accent-gold);
+        }
+
+        .trust-bar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .trust-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .trust-box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .trust-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .trust-box h3 {
+            font-size: 1.1rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-box p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 2.5rem 1rem;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .section-header h2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.75rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header p {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent-teal);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .service-highlight {
+            display: inline-block;
+            background: linear-gradient(135deg, #e8f4f8, #f0f8ff);
+            color: var(--accent-teal);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 2rem;
+            background: var(--bg-cream);
+        }
+
+        .testimonials-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .testimonial-stars {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-teal), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Location Section */
+        .location {
+            padding: 2.5rem 1rem;
+            background: var(--white);
+        }
+
+        .location-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .location-info h2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.75rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.25rem;
+        }
+
+        .address-box {
+            background: var(--bg-cream);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 1.25rem;
+        }
+
+        .address-box p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 280px;
+            min-height: 240px;
+            background: var(--bg-cream);
+            position: relative;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 240px;
+            border: none;
+            display: block;
+        }
+
+        /* Opening Hours */
+        .hours {
+            padding: 2.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary-blue), #2d5f8d);
+            color: var(--white);
+        }
+
+        .hours-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hours h2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.75rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .hours-table {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .hours-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .hours-day {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .hours-time {
+            text-align: right;
+            opacity: 0.9;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 2.5rem 1rem;
+            background: var(--white);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-cream);
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1rem 1.25rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 2.5rem 1rem;
+            background: var(--bg-cream);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.75rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 2rem 1rem;
+            padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-gold);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section a {
+            padding: 0.4rem 0;
+            min-height: 44px;
+            display: inline-block;
+            line-height: 1.4;
+            -webkit-tap-highlight-color: rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials – mobile first */
+        .testimonials {
+            padding: 2.5rem 1rem;
+            background: var(--bg-cream);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .testimonial-card {
+            padding: 1.25rem;
+        }
+
+        /* Responsive: Tablet (768px+) */
+        @media (min-width: 768px) {
+            .header-container {
+                padding: 1rem 1.5rem;
+            }
+
+            .hero {
+                padding: 4rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .trust-indicators {
+                gap: 1.25rem;
+                margin-bottom: 2rem;
+            }
+
+            .trust-item {
+                font-size: 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: row;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: auto;
+            }
+
+            .trust-bar {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .trust-bar-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+
+            .services {
+                padding: 4rem 2rem;
+            }
+
+            .section-header {
+                margin-bottom: 3rem;
+            }
+
+            .section-header h2 {
+                font-size: 2.25rem;
+            }
+
+            .section-header p {
+                font-size: 1.1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .service-card {
+                padding: 2rem;
+            }
+
+            .testimonials {
+                padding: 4rem 2rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .location {
+                padding: 4rem 2rem;
+            }
+
+            .location-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+
+            .location-info h2 {
+                font-size: 2rem;
+            }
+
+            .address-box {
+                padding: 1.5rem;
+            }
+
+            .map-container {
+                height: 350px;
+                min-height: 300px;
+            }
+
+            .hours {
+                padding: 4rem 2rem;
+            }
+
+            .hours h2 {
+                font-size: 2.25rem;
+                margin-bottom: 2rem;
+            }
+
+            .hours-row {
+                padding: 1rem 1.5rem;
+            }
+
+            .faq {
+                padding: 4rem 2rem;
+            }
+
+            .faq-question {
+                padding: 1.25rem 1.5rem;
+                font-size: 1.05rem;
+            }
+
+            .cta-section {
+                padding: 4rem 2rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2.25rem;
+            }
+
+            .cta-content p {
+                font-size: 1.1rem;
+            }
+
+            .footer {
+                padding: 3rem 2rem;
+                padding-bottom: calc(3rem + env(safe-area-inset-bottom));
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        /* Responsive: Desktop (1024px+) */
+        @media (min-width: 1024px) {
+            .header-container {
+                padding: 1.2rem 2rem;
+            }
+
+            .logo-image {
+                height: 64px;
+                max-height: 80px;
+            }
+
+            .hero {
+                padding: 6rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+
+            .trust-indicators {
+                gap: 2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .trust-item {
+                padding: 0.6rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .cta-buttons {
+                gap: 1.5rem;
+            }
+
+            .trust-bar {
+                padding: 3rem 2rem;
+            }
+
+            .trust-bar-container {
+                gap: 2rem;
+            }
+
+            .services {
+                padding: 5rem 2rem;
+            }
+
+            .section-header {
+                margin-bottom: 4rem;
+            }
+
+            .section-header h2 {
+                font-size: 2.8rem;
+            }
+
+            .section-header p {
+                font-size: 1.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+
+            .service-card {
+                padding: 2.5rem;
+                border-radius: 20px;
+            }
+
+            .testimonials {
+                padding: 5rem 2rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+
+            .location {
+                padding: 5rem 2rem;
+            }
+
+            .location-container {
+                gap: 4rem;
+            }
+
+            .location-info h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .address-box {
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .map-container {
+                height: 450px;
+                min-height: 300px;
+                border-radius: 20px;
+            }
+
+            .hours {
+                padding: 5rem 2rem;
+            }
+
+            .hours h2 {
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+            }
+
+            .hours-row {
+                padding: 1.5rem 2rem;
+            }
+
+            .hours-day {
+                font-size: 1.1rem;
+            }
+
+            .faq {
+                padding: 5rem 2rem;
+            }
+
+            .faq-question {
+                padding: 1.5rem 2rem;
+                font-size: 1.1rem;
+            }
+
+            .faq-answer {
+                padding: 0 2rem 1.5rem 2rem;
+            }
+
+            .cta-section {
+                padding: 5rem 2rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2.8rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .cta-content p {
+                font-size: 1.2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .footer {
+                padding: 4rem 2rem 2rem;
+                padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .footer-section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .footer-section p,
+            .footer-section a {
+                margin-bottom: 0.7rem;
+            }
+
+            .footer-section a {
+                min-height: auto;
+                display: block;
+            }
+
+            .footer-bottom {
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="../../Bilder/Waschmaschinenlogo.png" alt="Die Meisterreinigung Logo" class="logo-image">
+            </div>
+            <div class="header-contact">
+                <a href="tel:+4915738757595" class="phone-link">
+                    <span>📞</span>
+                    <span>01573 8757595</span>
+                </a>
+                <span class="status-badge status-closed">
+                    <span class="status-dot"></span>
+                    Öffnet Do um 09:00
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ihre Meisterreinigung in Wietmarschen / Lohne</h1>
+                <p class="hero-subtitle">Von Pferdedecken bis Hotelwäsche – Wir reinigen, was Ihnen wichtig ist</p>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span class="stars">★★★★★</span>
+                        <span>4,4 (32 Bewertungen)</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>✓</span>
+                        <span>Meisterbetrieb</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>🚗</span>
+                        <span>Hol- & Bringservice</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="tel:+4915738757595" class="btn btn-primary">
+                        <span>📞</span>
+                        <span>Jetzt anrufen</span>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>Unsere Services entdecken</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-bar-container">
+            <div class="trust-box">
+                <span class="trust-icon">⭐</span>
+                <h3>20+ Jahre Erfahrung</h3>
+                <p>Ihr zuverlässiger Partner seit vielen Jahren</p>
+            </div>
+            <div class="trust-box">
+                <span class="trust-icon">🏆</span>
+                <h3>4,4/5 Sterne bei Google</h3>
+                <p>32 zufriedene Kunden bewerten uns</p>
+            </div>
+            <div class="trust-box">
+                <span class="trust-icon">🚚</span>
+                <h3>Hol- & Bringservice</h3>
+                <p>Besonders für Pferdedecken</p>
+            </div>
+            <div class="trust-box">
+                <span class="trust-icon">📦</span>
+                <h3>GLS Paketshop</h3>
+                <p>Zusätzlicher Service für Sie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Unsere Services</h2>
+            <p>Professionelle Textilpflege für jeden Bedarf – von der Pferdedecke bis zum Brautkleid</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🐴</span>
+                <h3>Pferdedeckenservice</h3>
+                <p>Professionelle Reinigung Ihrer Pferdedecken mit bequemem Hol- und Bringservice direkt zu Ihrem Stall</p>
+                <span class="service-highlight">✓ Spezialisiert auf Outdoor- & Stalldecken</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🍽️</span>
+                <h3>Gastronomie & Hotelwäsche</h3>
+                <p>Zuverlässiger Partner für Gastronomiebetriebe und Hotels. Professionelle Aufbereitung Ihrer Tischwäsche</p>
+                <span class="service-highlight">✓ Pünktliche Lieferung garantiert</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">👔</span>
+                <h3>Berufsbekleidung & Oberhemden</h3>
+                <p>Perfekt gebügelte Hemden und gepflegte Arbeitskleidung für Ihren professionellen Auftritt</p>
+                <span class="service-highlight">✓ Heißmangel für knitterfreie Ergebnisse</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔥</span>
+                <h3>Heißmangel-Service</h3>
+                <p>Professionelles Bügeln großer Textilien mit unserer modernen Heißmangel-Anlage</p>
+                <span class="service-highlight">✓ Für Tischdecken, Bettwäsche und mehr</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">👗</span>
+                <h3>Textilreinigung & Spezialservice</h3>
+                <p>Schonende Reinigung von Abendkleidern, Brautkleidern und Anzügen mit höchster Sorgfalt</p>
+                <span class="service-highlight">✓ Behandlung empfindlicher Stoffe</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🧺</span>
+                <h3>Gardinenservice</h3>
+                <p>Professionelle Gardinenreinigung mit optionalem Abhol- und Aufhängservice</p>
+                <span class="service-highlight">✓ Komplettservice verfügbar</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">📦</span>
+                <h3>GLS Paketshop</h3>
+                <p>Bequemer Paketversand und -empfang während unserer Öffnungszeiten</p>
+                <span class="service-highlight">✓ Verlässlicher Paketservice</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <h2>Was unsere Kunden sagen</h2>
+                <p>Überzeugen Sie sich von der Qualität unserer Arbeit</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Immer wieder gerne – absolut empfehlenswert!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">B</div>
+                        <div class="author-info">
+                            <h4>Bomi Handels GmbH</h4>
+                            <p>via Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Schneller Service, exzellente Arbeit und super freundlicher Chef! Kann ich nur empfehlen!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">D</div>
+                        <div class="author-info">
+                            <h4>Dawid</h4>
+                            <p>vor 3 Monaten</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Wir haben unser Brautkleid und Anzug zur Wäscherei gebracht. Sehr zufrieden mit dem Ergebnis!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sandra Günnemann</h4>
+                            <p>Hochzeitsservice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Sehr verlässlicher Paketshop. Der Inhaber ist immer freundlich und sehr bemüht."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">B</div>
+                        <div class="author-info">
+                            <h4>Bärbel Dröge</h4>
+                            <p>GLS Paketshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location">
+        <div class="location-container">
+            <div class="location-info">
+                <h2>Besuchen Sie uns</h2>
+                <div class="address-box">
+                    <p><strong>📍 Adresse:</strong></p>
+                    <p>Poststraße 2a</p>
+                    <p>49835 Wietmarschen</p>
+                </div>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+                    <strong>Einzugsgebiet:</strong> Wir bedienen Wietmarschen und die gesamte Umgebung
+                </p>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                    🚗 <strong>Hol- & Bringservice:</strong> Kein Auto? Kein Problem – wir holen Ihre Textilien ab!
+                </p>
+                <a href="https://maps.google.com/?q=Poststraße+2a+49835+Wietmarschen" target="_blank" class="btn btn-primary">
+                    <span>🗺️</span>
+                    <span>Route planen</span>
+                </a>
+            </div>
+            <div class="map-container">
+                <!-- Google Maps: Poststraße 2a, 49835 Wietmarschen angepinnt -->
+                <iframe
+                    id="google-map-embed"
+                    class="map-iframe"
+                    src="https://www.google.com/maps?q=Poststra%C3%9Fe+2a,+49835+Wietmarschen&output=embed&z=16&hl=de"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Standort: Die Meisterreinigung – Poststraße 2a, 49835 Wietmarschen">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours -->
+    <section class="hours">
+        <div class="hours-container">
+            <h2>Öffnungszeiten</h2>
+            <div class="hours-table">
+                <div class="hours-row">
+                    <div class="hours-day">Montag</div>
+                    <div class="hours-time">Geschlossen</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Dienstag</div>
+                    <div class="hours-time">09:00 - 12:30, 15:00 - 18:00</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Mittwoch</div>
+                    <div class="hours-time">09:00 - 12:30</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Donnerstag</div>
+                    <div class="hours-time">09:00 - 12:30, 15:00 - 18:00</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Freitag</div>
+                    <div class="hours-time">09:00 - 12:30, 15:00 - 18:00</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Samstag</div>
+                    <div class="hours-time">09:00 - 12:00</div>
+                </div>
+                <div class="hours-row">
+                    <div class="hours-day">Sonntag</div>
+                    <div class="hours-time">Geschlossen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2>Häufig gestellte Fragen</h2>
+                <p>Alles, was Sie über unseren Service wissen müssen</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Bieten Sie einen Abholservice an?
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    Ja! Besonders für Pferdedecken bieten wir einen bequemen Hol- und Bringservice direkt zu Ihrem Stall an. Kontaktieren Sie uns für weitere Details.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Wie lange dauert eine Reinigung?
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    Die Bearbeitungszeit hängt vom jeweiligen Service ab. In der Regel beträgt die Dauer 3-5 Werktage. Bei Expressservice sprechen Sie uns bitte direkt an.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Reinigen Sie auch Brautkleider?
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    Ja, wir sind auf die Reinigung empfindlicher Textilien wie Brautkleider, Abendgarderobe und Anzüge spezialisiert. Ihre wertvollen Stücke sind bei uns in besten Händen.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Kann ich auch nur die Heißmangel nutzen?
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    Selbstverständlich! Wir bieten alle unsere Services auch einzeln an. Sie können gezielt nur den Heißmangel-Service für Ihre Tischdecken oder Bettwäsche nutzen.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Wo kann ich parken?
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    Parkplätze stehen direkt vor Ort zur Verfügung. Sie können bequem vorfahren und Ihre Textilien abgeben.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Bereit für perfekt gereinigte Textilien?</h2>
+            <p>Kontaktieren Sie uns jetzt und erleben Sie professionelle Textilpflege auf höchstem Niveau</p>
+            <div class="cta-buttons" style="justify-content: center;">
+                <a href="tel:+4915738757595" class="btn btn-primary">
+                    <span>📞</span>
+                    <span>Jetzt anrufen: 01573 8757595</span>
+                </a>
+                <a href="https://maps.google.com/?q=Poststraße+2a+49835+Wietmarschen" target="_blank" class="btn btn-secondary" style="background: var(--primary-blue); color: white; border: none;">
+                    <span>🗺️</span>
+                    <span>Route planen</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Die Meisterreinigung</h3>
+                <p>Ihr zuverlässiger Partner für professionelle Textilpflege in Wietmarschen und Umgebung</p>
+                <p style="margin-top: 1rem;">⭐ 4,4/5 Sterne bei Google</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>📍 Poststraße 2a<br>49835 Wietmarschen</p>
+                <p>📞 <a href="tel:+4915738757595">01573 8757595</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Di, Do, Fr: 09:00 - 12:30, 15:00 - 18:00</p>
+                <p>Mi: 09:00 - 12:30</p>
+                <p>Sa: 09:00 - 12:00</p>
+                <p>So, Mo: Geschlossen</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#services">Pferdedeckenservice</a>
+                <a href="#services">Gastronomie & Hotelwäsche</a>
+                <a href="#services">Textilreinigung</a>
+                <a href="#services">GLS Paketshop</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Die Meisterreinigung Wietmarschen. Alle Rechte vorbehalten.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="#" style="color: inherit; margin: 0 1rem;">Impressum</a>
+                <a href="#" style="color: inherit; margin: 0 1rem;">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').style.display = 'none';
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+                answer.style.display = 'block';
+            }
+        }
+
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update opening hours status dynamically
+        function updateStatus() {
+            const now = new Date();
+            const day = now.getDay();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const currentTime = hour * 60 + minute;
+
+            let isOpen = false;
+            let nextOpening = '';
+
+            // Opening hours definition
+            const hours = {
+                0: null, // Sunday - closed
+                1: null, // Monday - closed
+                2: [[540, 750], [900, 1080]], // Tuesday 9:00-12:30, 15:00-18:00
+                3: [[540, 750]], // Wednesday 9:00-12:30
+                4: [[540, 750], [900, 1080]], // Thursday
+                5: [[540, 750], [900, 1080]], // Friday
+                6: [[540, 720]], // Saturday 9:00-12:00
+            };
+
+            if (hours[day]) {
+                for (let period of hours[day]) {
+                    if (currentTime >= period[0] && currentTime < period[1]) {
+                        isOpen = true;
+                        break;
+                    }
+                }
+            }
+
+            const statusBadge = document.querySelector('.status-badge');
+            if (isOpen) {
+                statusBadge.className = 'status-badge status-open';
+                statusBadge.innerHTML = '<span class="status-dot"></span> Jetzt geöffnet';
+            } else {
+                statusBadge.className = 'status-badge status-closed';
+                // Find next opening
+                if (day === 0 || day === 1) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Di um 09:00';
+                } else if (day === 2 && currentTime >= 1080) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Mi um 09:00';
+                } else if (day === 3 && currentTime >= 750) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Do um 09:00';
+                } else if (day === 4 && currentTime >= 1080) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Fr um 09:00';
+                } else if (day === 5 && currentTime >= 1080) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Sa um 09:00';
+                } else if (day === 6 && currentTime >= 720) {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Öffnet Di um 09:00';
+                } else {
+                    statusBadge.innerHTML = '<span class="status-dot"></span> Geschlossen';
+                }
+            }
+        }
+
+        // Update status on load
+        updateStatus();
+        // Update every minute
+        setInterval(updateStatus, 60000);
+    </script>
+</body>
+</html>
